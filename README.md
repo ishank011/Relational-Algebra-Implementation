@@ -1,2 +1,2 @@
 # Relational Algebra Implementation in C++
-This is an implementation of various relational algebra operations like Select, Project, Union, Set difference, Division and others. 
+This is an implementation of the the procedural query language, which operates on relations using some specified operators, such as select, project, cartesian product, join, division and aggregate operations to answer user-defined queries.
