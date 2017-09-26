@@ -1,0 +1,15 @@
+Course_ID,Course_Name,Course_Dep,Time
+CS302,Computer Graphics,CSE,1100
+CS301,DBMS,CSE,1000
+CS303,Data Mining,CSE,1300
+CS304,Intelligent Computing,CSE,800
+ME302,Thermodynamics,Mechanical,1300
+ME304,Engineering Drawing,Mechanical,1200
+EE301,Electrical Circuits,Electrical,1200
+EE302,Transformers,Electrical,1500
+MA302,Graph Theory,MnC,900
+MA203,Linear Algebra,MnC,1400
+CH307,Chemical Bonding,Chemical,1500
+CH208,Inorganic Chemistry,Chemical,1600
+EC301,Semiconductors,Electronics,1400
+EC307,Digital Circuits,Electronics,1000

@@ -1,0 +1,49 @@
+Sample Queries:
+
+1. Query to display details of students registered for all courses of CSE Department
+V[J[J[students](enrollment)](courses)](S[Course_Dep='CSE'](courses))
+
+2. Query to display student details along with courses they are enrolled in
+J[students](J[enrollment](courses))
+
+3. Query to rename the First_Name attribute of students belonging to MnC Department
+R[new_t(fn)](P[First_Name](S[Department='MnC'](students)))
+
+4. Query to take cartesian product of the relation students with another renamed relation having the attributes Roll_No and First_Name
+C[R[a](P[Roll_No, First_Name](students))](students)
+
+5. Query implementing AND and OR operators in select operation
+S[Department='CSE' |    (Roll_No='14085035'^First_Name='Jagjot')](students)
+
+6. Query to display roll nos. of students studying CS301 but not CS302
+P[Roll_No](D[S[Course_ID='CS301'](enrollment)](S[Course_ID='CS302'](enrollment)))
+
+7. Query to implement multiple project operators
+P[Roll_No](P[Roll_No,     First_Name,   Last_Name](students))
+
+8. Query to display the roll nos. of students in Chemical Department or studying the course MA302
+U[P[Roll_No](S[Department='Chemical'](students))](P[Roll_No](S[Course_ID='MA302'](enrollment)))
+
+9. Query to display roll nos. in Mechanical Department and studying the course EE301
+I[P[Roll_No](S[Department='Mechanical'](students))](P[Roll_No](S[Course_ID='EE301'](enrollment)))
+
+10. Query to rename projection of columns
+R[a(x,y,z)](P[Department, Roll_No,First_Name]   (students))
+
+11. Query to display Course name and department taught after 11:00 AM
+P[Course_Name, Course_Dep](S[Time>'1100'] (courses))
+
+12. Query to display maximum Roll_No in the relation
+X[Roll_No](students)
+
+13. Query to display details of student with minimum Roll_No
+J[R[a(Roll_No)](N[Roll_No](students))](students)
+
+14. Query to display details of houses having price greater than the average price
+S[price>avg_price](C[houses](R[a(avg_price)](A[price](houses))))
+
+15. Query to display average price of houses in the city of SACRAMENTO
+A[price](S[city='SACRAMENTO'](houses))
+
+16. Query to display the number of houses having a not null value of sale_date
+O[sale_date](houses)
